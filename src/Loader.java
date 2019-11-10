@@ -20,39 +20,49 @@ public class Loader
             String catName1 = scan2.nextLine();
                 switch (catName1) {
                     case "Люцепюр":
-                        Люцепюр.feed((double) 100);
-                        System.out.println("\n************");
+                        System.out.println("\n************************************************");
                         System.out.format("Вес Люцепюра %.2f%s%n", Люцепюр.getWeight()," г.");
+                        Люцепюр.feed();
                         System.out.println("Люцепюр сейчас " + Люцепюр.getStatus());
-                        System.out.println("************");
+                        System.out.println(Люцепюр.countEaten());
+                        System.out.println(Люцепюр.toilet());
+                        System.out.println("************************************************");
                         break;
                     case "Марципан":
-                        Марципан.feed((double) 100);
-                        System.out.println("\n************");
-                        System.out.format("Вес Марципана %.2f%n", Марципан.getWeight());
+                        System.out.println("\n************************************************");
+                        System.out.format("Вес Марципан %.2f%s%n", Марципан.getWeight()," г.");
+                        Марципан.feed();
                         System.out.println("Марципан сейчас " + Марципан.getStatus());
-                        System.out.println("************");
+                        System.out.println(Марципан.countEaten());
+                        System.out.println(Марципан.toilet());
+                        System.out.println("************************************************");
                         break;
                     case "Анфиса":
-                        Анфиса.feed((double) 100);
-                        System.out.println("\n************");
-                        System.out.format("Вес Анфисы %.2f%n", Анфиса.getWeight());
+                        System.out.println("\n************************************************");
+                        System.out.format("Вес Анфиса %.2f%s%n", Анфиса.getWeight()," г.");
+                        Анфиса.feed();
                         System.out.println("Анфиса сейчас " + Анфиса.getStatus());
-                        System.out.println("************");
+                        System.out.println(Анфиса.countEaten());
+                        System.out.println(Анфиса.toilet());
+                        System.out.println("************************************************");
                         break;
                     case "Инокентий":
-                        Инокентий.feed((double) 100);
-                        System.out.println("\n************");
-                        System.out.format("Вес Инокентия %.2f%n", Инокентий.getWeight());
-                        System.out.println("Инокентий сейчас " + Инокентий.getStatus());
-                        System.out.println("************");
+                        System.out.println("\n************************************************");
+                        System.out.format("Вес Инокентий %.2f%s%n", Инокентий.getWeight()," г.");
+                        Инокентий.feed();
+                        System.out.println("catName1 сейчас " + Инокентий.getStatus());
+                        System.out.println(Инокентий.countEaten());
+                        System.out.println(Инокентий.toilet());
+                        System.out.println("************************************************");
                         break;
                     case "Маркиза":
-                        Маркиза.feed((double) 100);
-                        System.out.println("\n************");
-                        System.out.format("Вес Маркизы %.2f%n", Маркиза.getWeight());
+                        System.out.println("\n************************************************");
+                        System.out.format("Вес Маркиза %.2f%s%n", Маркиза.getWeight()," г.");
+                        Маркиза.feed();
                         System.out.println("Маркиза сейчас " + Маркиза.getStatus());
-                        System.out.println("************");
+                        System.out.println(Маркиза.countEaten());
+                        System.out.println(Маркиза.toilet());
+                        System.out.println("************************************************");
                         break;
                     default:
                         System.out.println("Вы ввели не правельное имя кота. Ничего страшного попробуйте ещё раз");
